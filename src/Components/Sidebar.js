@@ -33,8 +33,12 @@ function Sidebar() {
             </div>
 
             <div className="sidebar__search">
-                <SearchIcon />
-                <input placeholder="chats" type="text" />
+
+                <div className="sidebar__searchContainer">
+                    <SearchIcon />
+                    <input placeholder="chats" type="text" />
+                </div>
+                
             </div>
 
             <div className="sidebar__chats">
