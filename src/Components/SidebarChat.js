@@ -3,7 +3,7 @@ import React, {useEffect, useState } from 'react'
 import "./SidebarChat.css";
 
 
-function SidebarChat() {
+function SidebarChat({addNewChat }) {
 
     const [seed, setSeed]  = useState('');
 
@@ -11,8 +11,15 @@ function SidebarChat() {
         setSeed( Math.floor(Math.random() * 5000))
     }, []);
 
+    const createChat = () => {
+        const roomName = prompt("Please enter name of the chat");
 
-    return (
+        if(roomName) {
+            
+        }
+    };
+
+    return !addNewChat ? (
         <div className='sidebarChat'>
             <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`}/>
             <div className="sidebarChat__info">
@@ -20,6 +27,11 @@ function SidebarChat() {
                 <p>Last messege...</p>
             </div>
         </div>
+    ) : (
+        <div onClick={createChat}
+        className='sidebarChat'>
+            <h2>Add new chat</h2>
+        </div>    
     )
 }
 
