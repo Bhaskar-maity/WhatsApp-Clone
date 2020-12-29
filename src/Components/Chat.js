@@ -3,7 +3,8 @@ import React, {useEffect, useState } from 'react'
 
 
 import './Chat.css';
-import { AttachFile, Message, MoreVert, SearchOutlined } from '@material-ui/icons';
+import { AttachFile, InsertEmoticon, Message, MoreVert, SearchOutlined } from '@material-ui/icons';
+import MicIcon from '@material-ui/icons/Mic';
 function Chat() {
 
     const [seed, setSeed]  = useState('');
@@ -49,7 +50,12 @@ function Chat() {
             </div>
 
             <div className="chat__footer">
-
+                <InsertEmoticon />
+                <form>
+                    <input type="text" placeholder="Type a message"/>
+                    <button>Send a mesage</button>
+                </form>
+                <MicIcon />
             </div>
         </div>
     )
