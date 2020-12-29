@@ -3,7 +3,7 @@ import React, {useEffect, useState } from 'react'
 
 
 import './Chat.css';
-import { AttachFile, MoreVert, SearchOutlined } from '@material-ui/icons';
+import { AttachFile, Message, MoreVert, SearchOutlined } from '@material-ui/icons';
 function Chat() {
 
     const [seed, setSeed]  = useState('');
@@ -38,7 +38,14 @@ function Chat() {
             </div>
 
             <div className="chat__body">
-
+                <p className={`chat__message ${false && "chat__reciever"}`}>
+                    <span className="chat__name">bhaskar</span>
+                        hi
+                    <span className="chat__timestamp">10:30am</span>
+                    
+                </p>
+                
+                
             </div>
 
             <div className="chat__footer">
