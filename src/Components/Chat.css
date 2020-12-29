@@ -1,6 +1,7 @@
 .chat {
     flex: 0.65;
-    background-color: teal;
+    display: flex;
+    flex-direction: column;
 }
 
 .chat__header{
@@ -21,4 +22,20 @@
 }
 .chat__headerInfo > p{
     color: gray;
+}
+
+.chat__headerRight{
+    display: flex;
+    justify-content: space-between;
+    min-width: 100px;
+}
+
+/* chat body */
+.chat__body{
+    background-image: url("https://i.pinimg.com/originals/8f/ba/cb/8fbacbd464e996966eb9d4a6b7a9c21e.jpg");
+    flex: 1;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow: scroll;
 }
