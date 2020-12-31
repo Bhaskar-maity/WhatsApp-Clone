@@ -5,6 +5,8 @@ import { useStateValue } from "../StateProvider";
 import { actionTypes } from "../reducer";
 
 import "./Login.css";
+import Footer from './Footer';
+
 function Login() {
 
     const [{ user }, dispatch] = useStateValue();
@@ -33,6 +35,7 @@ function Login() {
                 </div>
 
                 <Button onClick={signIn}>SignIn with Google</Button>
+                <Footer />
                 
             </div>
             
