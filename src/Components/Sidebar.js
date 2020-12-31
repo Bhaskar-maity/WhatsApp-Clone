@@ -10,7 +10,6 @@ import db from "../firebase";
 import { useStateValue } from "../StateProvider";
 
 import './Sidebar.css';
-import { SearchOutlined } from '@material-ui/icons';
 
 function Sidebar() {
     const [rooms, setRooms] = useState([]);
